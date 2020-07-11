@@ -38,12 +38,14 @@ namespace BulkEvents
 
         public void S3EventHandler(S3Event s3Event)
         {
-            s3Event.Records
-                .Select(GetObjectFromS3)
-                .Select(ReadWeatherEvents)
-                .SelectMany(x => x)
-                .ToList()
-                .ForEach(PublishToSns);
+            var weatherEvents = new List<WeatherEvent>();
+            foreach (var eventRecord in s3Event.Records)
+            {
+                var s3Object = GetObjectFromS3(eventRecord);
+                weatherEvents = ReadWeatherEvents(s3Object);
+            }
+
+            weatherEvents.ForEach(PublishToSns);
         }
 
         private GetObjectResponse GetObjectFromS3(S3EventNotification.S3EventNotificationRecord s3Record)

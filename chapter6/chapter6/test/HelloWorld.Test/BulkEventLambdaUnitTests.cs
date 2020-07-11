@@ -11,7 +11,7 @@ using Xunit;
 
 namespace BulkEvents.Tests
 {
-    public class FunctionTest
+    public class BulkEventLambdaUnitTests
     {
         [Fact]
         public void ShouldReadWeatherEvents()

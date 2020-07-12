@@ -23,8 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\BulkEvents\BulkEvents.csproj" />
-    <ProjectReference Include="..\..\src\SingleEvent\SingleEvent.csproj" />
+    <ProjectReference Include="..\src\BulkEvents.csproj" />
   </ItemGroup>
 
 </Project>

@@ -21,6 +21,7 @@ namespace BulkEvents.Tests
         private readonly AmazonS3Client _fakeS3;
         private readonly GetObjectRequest _s3GetObjectRequest;
         private readonly string _snsTopic;
+        private const string TEST_DATA_PATH = "../../../testData";
 
         public BulkEventLambdaFunctionalTests()
         {
@@ -61,7 +62,7 @@ namespace BulkEvents.Tests
             // Create mock object response from sampledata.json
             var s3ResponseWithSampleData = new GetObjectResponse
             {
-                ResponseStream = File.OpenRead("../../../../../sampledata.json")
+                ResponseStream = File.OpenRead(Path.Combine(TEST_DATA_PATH, "sampledata.json"))
             };
 
             // Tell fake S3 to return to return the mock object response created above.
@@ -91,7 +92,7 @@ namespace BulkEvents.Tests
         {
             var s3ResponseWithBadData = new GetObjectResponse
             {
-                ResponseStream = File.OpenRead("../../../../../baddata.json")
+                ResponseStream = File.OpenRead(Path.Combine(TEST_DATA_PATH, "baddata.json"))
             };
 
             // Tell fake S3 to return to return the mock object response created above.

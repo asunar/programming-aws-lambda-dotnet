@@ -21,6 +21,7 @@ namespace BulkEvents.Tests
         private readonly AmazonS3Client _fakeS3;
         private readonly GetObjectRequest _s3GetObjectRequest;
         private readonly string _snsTopic;
+        // ReSharper disable once InconsistentNaming
         private const string TEST_DATA_PATH = "../../../testData";
 
         public BulkEventLambdaFunctionalTests()

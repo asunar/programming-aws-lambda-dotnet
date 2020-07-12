@@ -2,9 +2,9 @@ version = 0.1
 [default]
 [default.deploy]
 [default.deploy.parameters]
-stack_name = "chapter5-data-pipeline"
+stack_name = "chapter6-data-pipeline"
 s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-18zrh8e29ilig"
-s3_prefix = "chapter5-data-pipeline"
+s3_prefix = "chapter6-data-pipeline"
 region = "us-east-1"
 profile = "personal"
 confirm_changeset = true

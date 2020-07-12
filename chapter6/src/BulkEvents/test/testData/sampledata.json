@@ -7,14 +7,14 @@
 		"Longitude": -73.99
 	},
 	{
-		"LocationName":"London, UK", 
+		"LocationName":"Manchester, UK", 
 		"Temperature":64, 
 		"Timestamp":1564428898, 
 		"Latitude": 51.75, 
 		"Longitude": -1.25
 	},
 	{
-		"LocationName":"Charlottesville, VA", 
+		"LocationName":"Arlington, VA", 
 		"Temperature":87, 
 		"Timestamp":1564428899, 
 		"Latitude": 38.02, 

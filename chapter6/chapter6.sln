@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BulkEvents", "BulkEvents", "{3695F63A-FF4F-459F-9DC4-654C1E352195}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C5CD10A3-9602-4535-B0A5-34DED4514F67}"
+	ProjectSection(SolutionItems) = preProject
+		samconfig.toml = samconfig.toml
+		template.yaml = template.yaml
+	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkEvents.Tests", "BulkEvents\test\BulkEvents.Tests.csproj", "{A7F1E552-5FE6-4FB1-B5E7-347897F050C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkEvents", "src\BulkEvents\BulkEvents.csproj", "{CC158E5C-3ED8-4F63-A191-39404FC14DE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkEvents", "BulkEvents\src\BulkEvents.csproj", "{3CC29D0D-36B5-4F2F-8E37-43A988E2EBAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPipeline.Common", "src\DataPipeline.Common\DataPipeline.Common.csproj", "{0F27FB07-107A-40E4-A1E5-135BCE6E66A8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataPipeline.Common", "DataPipeline.Common", "{DC174105-EF3E-4E57-9BC8-0D328BCE06ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleEvent", "src\SingleEvent\SingleEvent.csproj", "{583F86BF-76FC-4230-9AB4-584D8CC57AAE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPipeline.Common", "DataPipeline.Common\DataPipeline.Common.csproj", "{1242450F-0D8A-4BE2-962E-F44924B74F68}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingleEvent", "SingleEvent", "{C0663A40-E784-4D63-9047-0EC22B79A7FF}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleEvent", "SingleEvent\SingleEvent.csproj", "{8F889188-A99B-4047-BAC9-291D7BA3D33D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkEvents.Tests", "src\BulkEvents\test\BulkEvents.Tests.csproj", "{EE57A5F4-329A-4F14-8C31-4D500FC84C2F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,31 +23,25 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A7F1E552-5FE6-4FB1-B5E7-347897F050C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A7F1E552-5FE6-4FB1-B5E7-347897F050C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A7F1E552-5FE6-4FB1-B5E7-347897F050C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A7F1E552-5FE6-4FB1-B5E7-347897F050C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3CC29D0D-36B5-4F2F-8E37-43A988E2EBAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CC29D0D-36B5-4F2F-8E37-43A988E2EBAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CC29D0D-36B5-4F2F-8E37-43A988E2EBAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CC29D0D-36B5-4F2F-8E37-43A988E2EBAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1242450F-0D8A-4BE2-962E-F44924B74F68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1242450F-0D8A-4BE2-962E-F44924B74F68}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1242450F-0D8A-4BE2-962E-F44924B74F68}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1242450F-0D8A-4BE2-962E-F44924B74F68}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8F889188-A99B-4047-BAC9-291D7BA3D33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8F889188-A99B-4047-BAC9-291D7BA3D33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8F889188-A99B-4047-BAC9-291D7BA3D33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8F889188-A99B-4047-BAC9-291D7BA3D33D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC158E5C-3ED8-4F63-A191-39404FC14DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC158E5C-3ED8-4F63-A191-39404FC14DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC158E5C-3ED8-4F63-A191-39404FC14DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC158E5C-3ED8-4F63-A191-39404FC14DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F27FB07-107A-40E4-A1E5-135BCE6E66A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F27FB07-107A-40E4-A1E5-135BCE6E66A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F27FB07-107A-40E4-A1E5-135BCE6E66A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F27FB07-107A-40E4-A1E5-135BCE6E66A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583F86BF-76FC-4230-9AB4-584D8CC57AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583F86BF-76FC-4230-9AB4-584D8CC57AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583F86BF-76FC-4230-9AB4-584D8CC57AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583F86BF-76FC-4230-9AB4-584D8CC57AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE57A5F4-329A-4F14-8C31-4D500FC84C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE57A5F4-329A-4F14-8C31-4D500FC84C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE57A5F4-329A-4F14-8C31-4D500FC84C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE57A5F4-329A-4F14-8C31-4D500FC84C2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A7F1E552-5FE6-4FB1-B5E7-347897F050C7} = {3695F63A-FF4F-459F-9DC4-654C1E352195}
-		{3CC29D0D-36B5-4F2F-8E37-43A988E2EBAD} = {3695F63A-FF4F-459F-9DC4-654C1E352195}
-		{1242450F-0D8A-4BE2-962E-F44924B74F68} = {DC174105-EF3E-4E57-9BC8-0D328BCE06ED}
-		{8F889188-A99B-4047-BAC9-291D7BA3D33D} = {C0663A40-E784-4D63-9047-0EC22B79A7FF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F4535F4-BD41-4116-9BB3-A292E2EB6971}

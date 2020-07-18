@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataPipeline.Common\DataPipeline.Common.csproj" />
+    <ProjectReference Include="..\..\DataPipeline.Common\src\DataPipeline.Common.csproj" />
   </ItemGroup>
 </Project>
 

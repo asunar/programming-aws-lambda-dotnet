@@ -43,6 +43,7 @@ namespace BulkEvents
             {
                 var s3Object = GetObjectFromS3(eventRecord);
                 weatherEvents = ReadWeatherEvents(s3Object);
+                Console.WriteLine($"Received {weatherEvents.Count} events.");
             }
 
             weatherEvents.ForEach(PublishToSns);

@@ -20,7 +20,7 @@ Resources:
   BulkEventsLambda:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      CodeUri: ./src/BulkEvents/
+      CodeUri: ./src/BulkEvents/src/
       Handler: BulkEvents::BulkEvents.BulkEventsLambda::S3EventHandler
       Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
         Variables:
@@ -40,7 +40,7 @@ Resources:
   SingleEventLambda:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: ./src/SingleEvent/
+      CodeUri: ./src/SingleEvent/src
       Handler: SingleEvent::SingleEvent.SingleEventLambda::SnsEventHandler
       Events:
         SnsEvent:

@@ -18,6 +18,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPipeline.Common", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleEvent", "src\SingleEvent\src\SingleEvent.csproj", "{6117FF72-872A-4A3E-84B9-1333DE19F13E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataPipelineTests", "end-to-end-tests\DataPipelineTests.csproj", "{C036DFCE-322D-42D1-BA1F-BD3F05E99D39}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{6117FF72-872A-4A3E-84B9-1333DE19F13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6117FF72-872A-4A3E-84B9-1333DE19F13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6117FF72-872A-4A3E-84B9-1333DE19F13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C036DFCE-322D-42D1-BA1F-BD3F05E99D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C036DFCE-322D-42D1-BA1F-BD3F05E99D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C036DFCE-322D-42D1-BA1F-BD3F05E99D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C036DFCE-322D-42D1-BA1F-BD3F05E99D39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
